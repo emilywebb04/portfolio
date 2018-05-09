@@ -1,0 +1,72 @@
+
+header {
+	display: block;
+	white-space: nowrap;
+
+}
+
+.logo {
+	width: 10%;
+	height: 100px;
+	text-align: left;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 0px;
+	
+}
+
+.header_info {
+	text-align: right;
+	position: relative;
+	margin: auto;
+	
+}
+
+h1 {
+	font-size: 5em;
+	padding-top: 0px;
+	font-weight: 100;
+	font-family: 'Lato', sans-serif;
+}
+
+h2 {
+	font-size: 2em;
+
+	font-weight: 100;
+	font-family: 'Lato', sans-serif;
+}
+
+p {
+	font-family: 'Lato', sans-serif;
+	font-weight: 100;
+	font-size: 3em;
+}
+
+figcaption {
+	font-family: 'Lato', sans-serif;
+}
+.computer {
+	width: 70%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#animal {
+	height: 500px;
+	float: left;
+}
+#pixel {
+	height: 250px;
+	position: relative;
+	left: 100px;
+	top: 50px;
+}
+#colorGame {
+	height: 250px;
+	position: relative;
+	left: 100px;
+	bottom: 50px;
+	top: 20px;
+
+}
