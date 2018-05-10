@@ -2,13 +2,12 @@
 
 header {
 	display: block;
-	white-space: nowrap;
+	
 
 }
 
 .logo {
 	width: 15%;
-	
 	text-align: left;
 	margin-top: 0px;
 	margin-bottom: 0px;
@@ -17,13 +16,12 @@ header {
 	
 }
 
-.header_info {
-	text-align: right;
-	position: relative;
-}
+
 span {
 	display: inline-block;
 	float: right;
+	
+	
 }
 
 h1 {
@@ -33,7 +31,7 @@ h1 {
 	font-weight: 100;
 	font-family: 'Lato', sans-serif;
 	color: #60718c;
-	text-align: right;
+	
 }
 
 h2 {
@@ -42,6 +40,7 @@ h2 {
 	font-weight: 100;
 	font-family: 'Lato', sans-serif;
 	color: #60718c;
+	text-align: right;
 }
 
 p {
@@ -51,11 +50,16 @@ p {
 	font-size: 3em;
 }
 
+figure {
+	margin: 5px;
+}
+
 .caption {
 	font-family: 'Lato', sans-serif;
 	color: #60718c;
 	display: block;
-	
+	font-size: 20px;
+	text-align: center;
 	align-content: left;
 }
 .computer {
@@ -65,36 +69,116 @@ p {
 	margin-right: auto;
 }
 
-#score {
-	text-align: left;
-}
-#pixel {
-	
-}
-#colorGame {
-	
-
-}
-
 .content {
-	
 	align-content: space-between;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
 	justify-content: space-between;
 	height: 650px;
-
 }
 
 .images {
-	
 	width: 400px;
 	height: 250px;
 	margin: 0px;
+	
 }
 
 .flex-images {
 	clear: both;
 
 }
+
+#score {
+	border: 1px solid gray;
+}
+
+@media screen and (max-width: 400px) {
+	body, .content {
+		display: inline;
+		position: relative;
+		width: 100%;
+		
+	}
+
+	figure {
+		width: 100%;
+
+	}
+
+	.images {
+		width: 100%;
+		
+	}
+	.caption {
+		width: 100%;
+		font-size: 16px;
+	}
+}
+
+@media screen and (min-width: 401px) and (max-width: 799px) {
+	.content {
+		
+		position: relative;
+		width: 100%;
+		flex-wrap: wrap;
+	}
+	figure {
+		width: 100%;
+		
+	}
+	.images {
+		display: block;
+		min-width: 60%;
+		margin: auto;
+	}
+	figcaption {
+		display: inline-block;
+		text-align: right;
+
+
+	}
+}
+
+@media screen and (max-width: 840px) {
+	.content {
+		
+		position: relative;
+		width: 100%;
+		flex-wrap: wrap;
+	}
+	figure {
+		width: 100%;
+		
+	}
+	.images {
+		display: block;
+		min-width: 60%;
+		margin: auto;
+	}
+	figcaption {
+		display: inline-block;
+		text-align: right;
+	}
+	
+
+
+@media screen and (min-width: 800px) and (max-width: 1244px) {
+	.content, figure {
+		flex-wrap: wrap;
+	}
+	figcaption {
+		align-content: left;
+		display: inline;
+	}
+	.images {
+		display: block;
+		height: auto;
+		max-width: 100%;
+		margin: auto;
+	}
+	
+}
+
+
